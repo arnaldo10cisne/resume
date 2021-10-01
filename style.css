@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    @page { margin: 0; }
+    body { 
+        margin: 0cm;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+:root {
+    /*FONTS*/
+    --name-font: 'Fredericka the Great';
+    --main-font: 'Montserrat';
+    --content-font: 'Roboto';
+    --title-font: 'Josefin Sans';
+
+    /*COLORS*/
+    --main-yellow: #ead017;
+    --main-yellow-darker:#706f38;
+    --light-gray: #9D8D8F;
+    --light-brown: #9B786F;
+    --strong-gray: #5A5560;
+    --blue-gray: #212136;
+    --blue-gray-darker: #1a1a2e;
+    --blue-gray-transparent: #212136f1;
+
+    --navigation-timeline-level-1: #bda913;
+    --navigation-timeline-level-2: #8d7e0e;
+    --navigation-timeline-level-3: #665b0a;
+    --navigation-timeline-level-3: #4b4307;
+}
+
+#root {
+    display: flex;
+}
+
+.page {
+    min-width: 21.59cm;
+    width: 21.59cm;
+    max-width: 21.59cm;
+    
+    min-height: 27.94cm;
+    height: 27.94;
+    max-height: 27.94cm;
+
+    border: 1px solid black;
+
+    margin: 50px;
+}
+
+.test1 {
+    background-color: rgb(0, 0, 77);
+    width: 21.59cm;
+    height: 27.94cm;
+}
+
+h1 {
+    color: white;
+}
+
+.btn {
+    height: 50px;
+    margin: 10px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(169, 169, 255);
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.btn--link {
+    text-decoration: none;
+    background-color: rgb(172, 255, 169);
+    font-size: 30px;
+}

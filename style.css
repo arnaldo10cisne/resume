@@ -33,6 +33,10 @@
     --navigation-timeline-level-2: #8d7e0e;
     --navigation-timeline-level-3: #665b0a;
     --navigation-timeline-level-3: #4b4307;
+
+    /* NUMBERS */
+    --page-width: 21.59cm;
+    --page-height: 27.94cm
 }
 
 #root {
@@ -40,32 +44,107 @@
 }
 
 .page {
-    min-width: 21.59cm;
-    width: 21.59cm;
-    max-width: 21.59cm;
+    min-width: var(--page-width);
+    width: var(--page-width);
+    max-width: var(--page-width);
     
-    min-height: 27.94cm;
-    height: 27.94;
-    max-height: 27.94cm;
+    min-height: var(--page-height);
+    height: var(--page-height);
+    max-height: var(--page-height);
 
     border: 1px solid black;
 
     margin: 50px;
 }
 
-.test1 {
-    background-color: rgb(0, 0, 77);
-    width: 21.59cm;
-    height: 27.94cm;
+/* RESUME STYLES START */
+
+.main_container {
+    background-color: var(--blue-gray);
+    height: var(--page-height);
+    width: var(--page-width);
 }
 
-h1 {
-    color: white;
+
+.h1_name{
+    font-family: var(--main-font);
+    color: var(--main-yellow);
+    font-size: 60px;
+    /* padding-left: 20px; */
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
 }
+.h2_slogan{
+    font-family: var(--main-font);
+    color: white;
+    /* padding-left: 20px; */
+    width: 100%;
+    text-align: center;
+}
+.p_title{
+    font-family: var(--content-font);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.div_contactInformation{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    /* height: 250px; */
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+.p_contactInformation{
+    font-family: var(--content-font);
+    color: white;
+    padding: 10px;
+    background-color: var(--blue-gray);
+    border: var(--main-yellow) 1px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    margin-top: -30px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+.div_informationColumn{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 40px;
+}
+.contactInformationBlock{
+    margin-bottom: 12px;
+}
+.informationTitle{
+    font-size: 16px;
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+.informationData{
+    font-family: var(--content-font);
+    font-weight: 600;
+}
+/* RESUME STYLES END */
 
 .btn {
     height: 50px;
-    margin: 10px 50px;
+    margin: 10px 30px;
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(169, 169, 255);

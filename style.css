@@ -52,7 +52,7 @@
     height: var(--page-height);
     max-height: var(--page-height);
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     margin: 50px;
 }
@@ -63,6 +63,7 @@
     background-color: var(--blue-gray);
     height: var(--page-height);
     width: var(--page-width);
+    /* padding: 20px 0; */
 }
 
 
@@ -88,7 +89,7 @@
     width: 100%;
     text-align: center;
     padding: 20px 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .div_contactInformation{
@@ -102,9 +103,10 @@
     position: relative;
     border-radius: 20px;
     padding: 0 30px;
+    margin-bottom: 20px;
 }
 .p_contactInformation{
-    font-family: var(--content-font);
+    font-family: var(--main-font);
     color: white;
     padding: 10px;
     background-color: var(--blue-gray);
@@ -112,7 +114,7 @@
     border-radius: 10px;
     font-size: 30px;
     text-align: center;
-    width: 50%;
+    width: 55%;
     position: absolute;
     margin-top: -30px;
     left: 0; 
@@ -139,6 +141,242 @@
 .informationData{
     font-family: var(--content-font);
     font-weight: 600;
+}
+
+.sectionTitle{
+    font-size: 22px;
+    font-family: var(--main-font);
+    font-weight: 600;
+    color: var(--blue-gray);
+    padding: 5px;
+    /* padding-left: 20px; */
+    margin: auto;
+    width: 100%;
+    background-color: var(--main-yellow);
+    text-align: center;
+    
+}
+.profileSection{
+    margin-left: 20px;
+    color: var(--main-yellow);
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 600;
+}
+.personalProfileText{
+    color: white;
+    width: 95%;
+    margin: 15px auto;
+    /* padding: 20px 15px; */
+    border-radius: 10px;
+    text-align: justify;
+    font-family: var(--content-font);
+    /* font-weight: 600; */
+}
+.college_education_div{
+    width: 95%;
+    background-color: var(--blue-gray-darker);
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.college_logo{
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.college_education_div > div {
+    display: flex;
+    flex-direction: column;
+}
+.college_name{
+    color: var(--main-yellow);
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+.college_degree {
+    color: white;
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-style: italic;
+}
+.college_date {
+    color: white;
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    font-family: var(--content-font);
+}
+.certificates_list{
+    background-color: var(--blue-gray-darker);
+    padding: 5px;
+}
+.certiicate_cell{
+    background-color: var(--blue-gray);
+    width: 95%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    /* border: solid 1px var(--main-yellow); */
+    position: relative;
+}
+.academy_logo{
+    height: 25px;
+}
+.academy_name{
+    color: var(--main-yellow);
+    font-family: var(--main-font);
+    font-weight: 600;
+    margin: 0 20px;
+}
+.certificate_name{
+    font-family: var(--main-font);
+    color: white;
+}
+.certificate_date{
+    position: absolute;
+    right: 30px;
+    color: white;
+    font-family: var(--content-font);
+}
+.certificates_link{
+    color: white;
+    margin-top: 7px;
+    width: 95%;
+    text-align: right;
+    font-family: var(--content-font);
+}
+.certificates_link > span{
+    font-style: italic;
+}
+.skills_title{
+    width: 100%;
+    text-align: center;
+    font-family: var(--title-font);
+    color: var(--main-yellow);
+    margin: 12px 0 10px 0;
+}
+.skill_section {
+    display: flex;
+    justify-content: center;
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+    background-color: var(--blue-gray-darker);
+    width: 95%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.skill_section__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-gray);
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    min-height: 80px;
+}
+.skill_section__cell__img {
+    width: 40px;
+    margin: auto 5px;
+}
+.skill_section__cell__name {
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    margin: 2px;
+}
+
+.language_section{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+.language_cell{
+    display: flex;
+    align-items: center;
+    background-color: var(--blue-gray-darker);
+    padding: 10px;
+    border-radius: 10px;
+}
+.language_cell > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5px;
+}
+.language_cell__img{
+    width: 50px;
+}
+.language_cell__name{
+    color: white;
+    font-family: var(--main-font);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.proficiency_level__tag{
+    color: white;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+}
+.proficiency_level__grade{
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+}
+
+.project_section{
+    width: 90%;
+    margin: 10px auto;
+}
+.project_item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid var(--main-yellow) 3px;
+}
+.project_title{
+    color: var(--main-yellow);
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.project_description{
+    color: white;
+    font-family: var(--content-font);
+    margin: 10px 0px;
+    text-align: justify;
+}
+.project_link {
+    font-family: var(--content-font);
+    color: var(--main-yellow);
+    font-style: italic;
+}
+.project_tech {
+    margin-bottom: 7px;
+}
+.project_tech__item {
+    color: var(--main-yellow);
+    font-size: 1rem;
+    font-family: var(--content-font);
+    background-color: var(--blue-gray-darker);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 /* RESUME STYLES END */
 

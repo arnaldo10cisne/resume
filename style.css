@@ -72,7 +72,6 @@
     color: var(--main-yellow);
     font-size: 60px;
     /* padding-left: 20px; */
-    padding-top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -95,43 +94,19 @@
 .div_contactInformation{
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    /* height: 250px; */
+    width: 100%;
     background-color: white;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 0px;
     position: relative;
-    border-radius: 20px;
-    padding: 0 30px;
-    margin-bottom: 20px;
-}
-.p_contactInformation{
-    font-family: var(--main-font);
-    color: white;
-    padding: 10px;
-    background-color: var(--blue-gray);
-    border: var(--main-yellow) 1px solid;
-    border-radius: 10px;
-    font-size: 30px;
-    text-align: center;
-    width: 55%;
-    position: absolute;
-    margin-top: -30px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    
+    margin-bottom: 15px;
+    padding: 10px 20px;
 }
 
 .div_informationColumn{
     display: flex;
     flex-direction: column;
-
-    margin-top: 40px;
-}
-.contactInformationBlock{
-    margin-bottom: 12px;
+    width: 100%;
 }
 .informationTitle{
     font-size: 16px;
@@ -141,8 +116,16 @@
 .informationData{
     font-family: var(--content-font);
     font-weight: 600;
+    margin-left: 10px;
 }
-
+.contactInformationBlock{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.informationIcon{
+    width: 30px;
+}
 .sectionTitle{
     font-size: 22px;
     font-family: var(--main-font);
@@ -155,6 +138,14 @@
     background-color: var(--main-yellow);
     text-align: center;
     
+}
+.div_personalProfile{
+    width: 90%;
+    margin: auto;
+    background-color: var(--blue-gray-darker);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 .profileSection{
     margin-left: 20px;
@@ -174,7 +165,7 @@
     /* font-weight: 600; */
 }
 .college_education_div{
-    width: 95%;
+    width: 90%;
     background-color: var(--blue-gray-darker);
     margin: auto;
     margin-top: 10px;

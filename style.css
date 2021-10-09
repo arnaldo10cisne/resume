@@ -54,7 +54,8 @@
 
     /* border: 1px solid black; */
 
-    margin: 50px;
+    margin: 10px;
+    overflow-y: hidden;
 }
 
 /* RESUME STYLES START */
@@ -125,6 +126,7 @@
 }
 .informationIcon{
     width: 30px;
+    margin-left: 20px;
 }
 .sectionTitle{
     font-size: 22px;
@@ -282,7 +284,7 @@
 }
 .skill_section__cell__name {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--main-font);
     margin: 2px;
 }
@@ -389,4 +391,23 @@
     text-decoration: none;
     background-color: rgb(172, 255, 169);
     font-size: 30px;
+}
+
+.chk_section {
+    width: 1500px;
+}
+.chk_skill {
+    /* display: none; */
+}
+.chk_label{
+    font-size: 35px;
+    cursor: pointer;
+    user-select: none;
+    border: solid black 1px;
+}
+.chk_label--on{
+    background-color: rgb(145, 197, 145);
+}
+.chk_label--off{
+    background-color: rgb(204, 132, 132);
 }

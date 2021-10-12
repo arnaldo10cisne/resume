@@ -69,7 +69,6 @@ addEventListener('load', ()=>{
 })
 
 body.addEventListener('change', ()=>{
-    
     chk_addListeners()
 })
 

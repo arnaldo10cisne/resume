@@ -100,7 +100,7 @@
     margin: auto;
     margin-top: 0px;
     position: relative;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 10px 20px;
 }
 
@@ -146,8 +146,8 @@
     margin: auto;
     background-color: var(--blue-gray-darker);
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    /* margin-bottom: 15px; */
+    /* border-radius: 10px; */
 }
 .profileSection{
     margin-left: 20px;
@@ -160,19 +160,43 @@
     color: white;
     width: 95%;
     margin: 15px auto;
+    margin-bottom: 0;
     /* padding: 20px 15px; */
     border-radius: 10px;
     text-align: justify;
     font-family: var(--content-font);
     /* font-weight: 600; */
 }
+.list_of_hobbies{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.hobbie_cell{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbie_cell__img{
+    width: 50px;
+    height: 50px;
+}
+.hobbie_cell__name{
+    color: white;
+    font-family: var(--main-font);
+    margin-top: 5px;
+}
 .college_education_div{
     width: 90%;
     background-color: var(--blue-gray-darker);
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 5px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     align-items: center;
     position: relative;
@@ -181,8 +205,8 @@
     width: 100px;
     background-color: white;
     padding: 5px;
-    border-radius: 10px;
-    margin-right: 20px;
+    /* border-radius: 10px; */
+    margin: 10px 10px;
 }
 .college_education_div > div {
     display: flex;
@@ -207,9 +231,14 @@
     font-size: 20px;
     font-family: var(--content-font);
 }
+.other_certificates_section {
+    border-top: solid 1px var(--main-yellow);
+    display: flex;
+}
 .certificates_list{
     background-color: var(--blue-gray-darker);
-    padding: 5px;
+    /* padding: 5px; */
+    width: 100%;
 }
 .certiicate_cell{
     background-color: var(--blue-gray);
@@ -241,7 +270,7 @@
 }
 .certificates_link{
     color: white;
-    margin-top: 7px;
+    margin: 13px 0;
     width: 95%;
     text-align: right;
     font-family: var(--content-font);
@@ -256,16 +285,43 @@
     color: var(--main-yellow);
     margin: 12px 0 10px 0;
 }
+
+
+
+.div_skills {
+    width: 100%;
+}
+
 .skill_section {
     display: flex;
-    justify-content: center;
-    /* align-items: baseline; */
-    flex-wrap: wrap;
     background-color: var(--blue-gray-darker);
-    width: 95%;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 10px;
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin: 0 auto; */
+    min-height: 200px;
+    /* padding-left: 65px; */
+    position: relative;
+    border-bottom: 1px solid var(--main-yellow);
+}
+.skills_section_title--tech{
+    text-align: center;
+    font-family: var(--title-font);
+    color: var(--blue-gray);
+    background-color: var(--main-yellow);
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 50px;
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    padding: 10px 13px;
+}
+
+.tech_cells_collection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 15px;
 }
 .skill_section__cell {
     display: flex;
@@ -289,37 +345,54 @@
     margin: 2px;
 }
 
+
+
 .language_section{
     display: flex;
-    justify-content: space-around;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-bottom: 10px;
-    
+    /* margin-bottom: 10px; */
+    min-height: 127px;
+    position: relative;
+}
+.skills_section_title--lang{
+    text-align: center;
+    font-family: var(--title-font);
+    color: var(--blue-gray);
+    background-color: var(--main-yellow);
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 50px;
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    padding: 10px 13px;
+}
+.laguages_cells_collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
 }
 .language_cell{
     display: flex;
     align-items: center;
     background-color: var(--blue-gray-darker);
-    padding: 10px;
-    border-radius: 10px;
 }
 .language_cell > div{
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    margin: 5px;
 }
 .language_cell__img{
-    width: 50px;
+    width: 20px;
+    margin: 10px;
+    margin-left: 20px;
 }
 .language_cell__name{
     color: white;
     font-family: var(--main-font);
-    margin-bottom: 5px;
     font-size: 1.2rem;
-    font-weight: 600;
+    margin-right: 15px;
+    min-width: 80px;
 }
 .proficiency_level__tag{
     color: white;
@@ -329,7 +402,15 @@
 .proficiency_level__grade{
     color: var(--main-yellow);
     font-family: var(--title-font);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    min-width: 160px;
+}
+
+.proficiency_level__certificate{
+    align-self: center;
+    color: white;
+    font-family: var(--content-font);
+    font-size: 1rem;
 }
 
 .project_section{

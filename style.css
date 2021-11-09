@@ -520,6 +520,11 @@
 }
 /* RESUME STYLES END */
 
+.menu_title {
+    font-family: var(--main-font);
+    margin-top: 30px;
+}
+
 .btn {
     height: 50px;
     margin: 10px 30px;
@@ -538,6 +543,12 @@
     text-decoration: none;
     background-color: rgb(172, 255, 169);
     font-size: 30px;
+    color: black;
+}
+
+.btn--link:hover {
+    background-color: rgb(146, 218, 143);
+    
 }
 
 .chk_section {
@@ -578,7 +589,7 @@
     font-family: var(--main-font);
     font-size: 20px;
     font-weight: 600px;
-    width: 125px;
+    min-width: 125px;
     padding: 5px;
     margin:5px;
 }

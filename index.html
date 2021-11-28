@@ -33,7 +33,7 @@
                 
                 <div class="div_contactInformation">
                     <div class="div_informationColumn">
-                        <p class="contactInformationBlock"><img class="informationIcon" src="https://img.icons8.com/ios-glyphs/200/000000/marker--v1.png"/><small class="informationData">Medellín, Colombia.</small></p>
+                        <p class="contactInformationBlock"><img class="informationIcon" src="https://img.icons8.com/ios-glyphs/200/000000/marker--v1.png"/><small class="informationData">Medellín, Colombia.<small id="fullAddress" style="display: none;"><br>Crr 58A-Sur #58CC-28</small></small></p>
                         <p class="contactInformationBlock"><img class="informationIcon" src="https://img.icons8.com/ios-glyphs/200/000000/internet--v1.png"/><small class="informationData">www.arnaldocisneros.com</small></p>
                     </div>
                     <div class="div_informationColumn">
@@ -108,7 +108,7 @@
                             <p class="college_degree">Software engineering</p>
                             
                         </div>
-                        <p class="college_date">2014 - 2018</p>
+                        <p class="college_date">2014 - 2017</p>
                     </div>
                     
 
@@ -194,7 +194,7 @@
                     <div class="skill_section">
 
                         <div class="skills_section_title--tech">
-                            Technical proficiencies
+                            Tech skills
                         </div>
 
                         <div class="tech_cells_collection">
@@ -425,7 +425,7 @@
                             <img src="" alt="">
                             <small class="job_title">🌐 Web Developer</small>
                             <small class="job_company">🔻 Freelance | Medellín, Colombia</small>
-                            <p class="job_description">Offered my services as a freelancer web developer, creating websites for interested clients.<br><span class="job_duration">Since March 2019 [Currently]</span></p>
+                            <p class="job_description">Offered my services as a freelancer web developer, creating websites for interested clients.<br><span class="job_duration">March 2019 - December 2021 [34 Months]</span></p>
                         </div>
                         <div id="div_chk_teleperformance" class="job_item">
                             <img src="" alt="">
@@ -443,7 +443,13 @@
                             <img src="" alt="">
                             <small class="job_title">💻 Bilingual Voice Agent</small>
                             <small class="job_company">🔻 [24]7.ai | Medellín, Colombia</small>
-                            <p class="job_description">Offered professional customer service for a multinational retail corporation located in the United States.<br><span class="job_duration">Since November 2021 [Currently]</span></p>
+                            <p class="job_description">Offered professional customer service for a multinational retail corporation located in the United States.<br><span class="job_duration">November 2021 [1 Month]</span></p>
+                        </div>
+                        <div id="div_chk_macheight" class="job_item">
+                            <img src="" alt="">
+                            <small class="job_title">🚀 Jr. Software Engineer</small>
+                            <small class="job_company">🔻 MachEight, LLC | Medellín, Colombia</small>
+                            <p class="job_description">I worked with a team of software engineers developing web pages and mobile applications for US clients.<br><span class="job_duration">Since December 2021 [Currently]</span></p>
                         </div>
                     </div>
 
@@ -491,6 +497,14 @@
         <button class="chk_btn" id="printPage2" onclick="printElement('page2')">PRINT PAGE 2</button>
         <button class="chk_btn" id="printPage2" onclick="printAll()">PRINT ALL</button>
         <a class="chk_btn btn--link" href="./spanish.html">VIEW IN SPANISH</a>
+
+        <div class="chk_section">
+            <h2 class="menu_title">Quick changes</h2>
+            <div class="chk_list">
+                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_fullAddress" id="chk_fullAddress"><label class="chk_label" for="chk_fullAddress">Show full adress</label></div>
+                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_nationalId" id="chk_nationalId"><label class="chk_label" for="chk_nationalId">Show national ID [N/A]</label></div>
+                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_passport" id="chk_passport"><label class="chk_label" for="chk_passport">Show passport [N/A]</label></div>
+        </div>
 
         <div class="chk_section">
             <h2 class="menu_title">Skills selection  (Maximum recommended: 25 items)</h2>
@@ -548,10 +562,11 @@
             <h2 class="menu_title">Jobs selection (Maximum recommended: 5 items)</h2>
             <div class="chk_list">
                 <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_cofeeMuseum" id="chk_cofeeMuseum"><label class="chk_label" for="chk_cofeeMuseum">Cofee Museum</label></div>
-                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_freelancer" id="chk_freelancer"><label class="chk_label" for="chk_freelancer">Freelancer</label></div>
+                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_freelancer" id="chk_freelancer"><label class="chk_label" for="chk_freelancer">Freelancer WebDev</label></div>
                 <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_teleperformance" id="chk_teleperformance"><label class="chk_label" for="chk_teleperformance">Teleperformance</label></div>
                 <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_igt" id="chk_igt"><label class="chk_label" for="chk_igt">IGT Solutions</label></div>
                 <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_24-7" id="chk_24-7"><label class="chk_label" for="chk_24-7">[24]7.ai</label></div>
+                <div class="chk_div"><input class="chk_job" type="checkbox" name="chk_macheight" id="chk_macheight"><label class="chk_label" for="chk_macheight">MachEight</label></div>
             </div>
             <button class="chk_btn" id="selectAllChkJob">Select all</button>
             <button class="chk_btn" id="deleteAllChkJob">Delete all</button>

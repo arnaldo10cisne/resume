@@ -11,6 +11,7 @@ const selectAllChkJob = document.getElementById('selectAllChkJob')
 const deleteAllChkJob = document.getElementById('deleteAllChkJob')
 const selectAllChkProyect = document.getElementById('selectAllChkProyect')
 const deleteAllChkProyect = document.getElementById('deleteAllChkProyect')
+const chk_fullAddress = document.getElementById('chk_fullAddress')
 
 const printElement = (el) => {
     let pageBackup = document.body.innerHTML
@@ -131,8 +132,15 @@ body.addEventListener('change', ()=>{
 })
 
 
-//BUTTONS
+//BUTTONS AND OTHER CHECKS
 
+chk_fullAddress.addEventListener('click', () => {
+    if (!chk_fullAddress.checked) {
+        document.getElementById('fullAddress').style.display = 'none'
+    } else {
+        document.getElementById('fullAddress').style.display = 'inline'
+    }
+})
 
 selectAllChk.addEventListener('click', () => {
     for (let index = 0; index < chk_skill.length; index++) {

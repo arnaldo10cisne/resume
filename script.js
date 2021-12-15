@@ -132,7 +132,7 @@ body.addEventListener('change', ()=>{
 })
 
 
-// BUTTONS AND OTHER CHECKS
+//BUTTONS AND OTHER CHECKS
 
 chk_fullAddress.addEventListener('click', () => {
     if (!chk_fullAddress.checked) {

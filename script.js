@@ -1,3 +1,19 @@
+let data_location = 'Medellín, Colombia.'
+// let data_fullAddress = 'Cl 58A-Sur #58CC-28'
+let data_phone = '+57 301 644 0199'
+let data_email = 'arnaldo10cisne@gmail.com'
+let data_linkedin = 'linkedin.com/in/arnaldo10cisne/'
+let data_github = 'github.com/arnaldo10cisne'
+let data_website = 'www.arnaldocisneros.com'
+
+const field_data_location = document.getElementById('data_location')
+// const field_data_fullAddress = document.getElementById('fullAddress')
+const field_data_phone = document.getElementById('data_phone')
+const field_data_email = document.getElementById('data_email')
+const field_data_website = document.getElementById('data_website')
+const field_data_linkedin = document.getElementById('data_linkedin')
+const field_data_github = document.getElementById('data_github')
+
 const page1 = document.getElementById('page1')
 const page2 = document.getElementById('page2')
 const chk_skill = document.getElementsByClassName('chk_skill')
@@ -12,6 +28,16 @@ const deleteAllChkJob = document.getElementById('deleteAllChkJob')
 const selectAllChkProyect = document.getElementById('selectAllChkProyect')
 const deleteAllChkProyect = document.getElementById('deleteAllChkProyect')
 const chk_fullAddress = document.getElementById('chk_fullAddress')
+
+const fill_data = () => {
+  field_data_location.innerText = data_location
+  // field_data_fullAddress.innerText = data_fullAddress
+  field_data_phone.innerText = data_phone
+  field_data_email.innerText = data_email
+  field_data_website.innerText = data_website
+  field_data_linkedin.innerText = data_linkedin
+  field_data_github.innerText = data_github
+}
 
 const printElement = (el) => {
     let pageBackup = document.body.innerHTML
@@ -123,6 +149,7 @@ const chk_initialValue_inverse = () => {
 }
 
 addEventListener('load', ()=>{
+    fill_data()
     chk_initialValue()
     chk_addListeners()
 })

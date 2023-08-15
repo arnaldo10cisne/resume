@@ -52,8 +52,6 @@
   height: var(--page-height);
   max-height: var(--page-height);
 
-  /* border: 1px solid black; */
-
   margin: 10px;
   overflow-y: hidden;
 }
@@ -64,55 +62,40 @@
   background-color: var(--blue-gray);
   height: var(--page-height);
   width: var(--page-width);
-  /* padding: 20px 0; */
 }
 
+.name_container {
+  padding: 10px;
+}
 
 .h1_name{
   font-family: var(--main-font);
   color: var(--main-yellow);
-  font-size: 60px;
-  /* padding-left: 20px; */
+  font-size: 40px;
   width: 100%;
   text-align: center;
 }
 .h2_slogan{
   font-family: var(--main-font);
   color: white;
-  /* padding-left: 20px; */
   width: 100%;
   text-align: center;
-}
-.p_title{
-  font-family: var(--content-font);
-  color: white;
-  width: 100%;
-  text-align: center;
-  padding: 20px 20px;
-  font-size: 25px;
-  font-weight: 700;
 }
 .div_contactInformation{
   display: flex;
   justify-content: space-between;
   width: 100%;
   background-color: white;
+  
   margin: auto;
   margin-top: 0px;
   position: relative;
-  /* margin-bottom: 15px; */
-  padding: 10px 20px;
 }
 
 .div_informationColumn{
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-.informationTitle{
-  font-size: 16px;
-  font-family: var(--main-font);
-  font-weight: 700;
 }
 .informationData{
   font-family: var(--content-font);
@@ -122,12 +105,24 @@
 .contactInformationBlock{
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 2px;
 }
 .informationIcon{
-  width: 30px;
+  width: 20px;
   margin-left: 20px;
 }
+
+.left_box {
+  width: 30%;
+  height: 910px;
+  background-color: var(--blue-gray-darker);
+}
+
+.right_box {
+  width: 70%;
+  background-color: #f4f4ff;
+}
+
 .sectionTitle{
   font-size: 22px;
   font-family: var(--main-font);

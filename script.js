@@ -3,7 +3,7 @@ let data_phone = '+57 301 644 0199'
 let data_email = 'arnaldo10cisne@gmail.com'
 let data_linkedin = 'linkedin.com/in/arnaldo10cisne/'
 let data_github = 'github.com/arnaldo10cisne'
-let data_website = 'www.arnaldocisneros.com'
+let data_website = 'arnaldocisnerosdev.com'
 
 const field_data_location = document.getElementById('data_location')
 const field_data_phone = document.getElementById('data_phone')

@@ -91,6 +91,15 @@
   margin-top: 0px;
   position: relative;
 }
+.single_page_left_title{
+  font-family: var(--main-font);
+  color: var(--main-yellow);
+  font-size: 25px;
+  width: 100%;
+  /* text-align: center; */
+  margin-left: 20px;
+  margin-top: 25px;
+}
 
 .div_informationColumn{
   display: flex;
@@ -127,12 +136,12 @@
   font-size: 22px;
   font-family: var(--main-font);
   font-weight: 600;
-  color: var(--blue-gray);
+  color: white;
   padding: 5px;
   /* padding-left: 20px; */
   margin: auto;
   width: 100%;
-  background-color: var(--main-yellow);
+  background-color: var(--blue-gray-darker);
   text-align: center;
   
 }
@@ -142,8 +151,6 @@
   font-weight: 600;
   color: white;
   padding: 5px;
-  /* padding-left: 20px; */
-  /* margin: auto; */
   width: 100%;
   background-color: var(--blue-gray-darker);
   text-align: center;
@@ -153,8 +160,6 @@
   margin: auto;
   background-color: var(--blue-gray-darker);
   padding: 10px;
-  /* margin-bottom: 15px; */
-  /* border-radius: 10px; */
 }
 .profileSection{
   margin-left: 20px;
@@ -165,14 +170,10 @@
 }
 .personalProfileText{
   color: white;
-  width: 95%;
-  margin: 15px auto;
-  margin-bottom: 0;
-  /* padding: 20px 15px; */
-  border-radius: 10px;
+  width: 90%;
+  margin: 10px auto;
   text-align: justify;
   font-family: var(--content-font);
-  /* font-weight: 600; */
 }
 .list_of_hobbies{
   width: 100%;
@@ -199,20 +200,17 @@
 }
 .college_education_div{
   width: 90%;
-  background-color: var(--blue-gray-darker);
+  /* background-color: var(--blue-gray-darker); */
   margin: auto;
-  /* margin-top: 10px; */
   padding: 5px;
-  /* border-radius: 10px; */
   display: flex;
   align-items: center;
   position: relative;
 }
 .college_logo{
-  width: 100px;
-  background-color: white;
+  width: 150px;
+  background-color: transparent;
   padding: 5px;
-  /* border-radius: 10px; */
   margin: 10px 10px;
 }
 .college_education_div > div {
@@ -220,22 +218,23 @@
   flex-direction: column;
 }
 .college_name{
-  color: var(--main-yellow);
+  color: var(--blue-gray-darker);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 600;
 }
 .college_degree {
-  color: white;
+  color: black;
   font-family: var(--main-font);
   font-size: 18px;
   font-style: italic;
 }
 .college_date {
-  color: white;
+  color: black;
   position: absolute;
   right: 30px;
-  font-size: 20px;
+  top: 49px;
+  font-size: 14px;
   font-family: var(--content-font);
 }
 .other_certificates_section {
@@ -304,10 +303,7 @@
   display: flex;
   background-color: var(--blue-gray-darker);
   width: 100%;
-  /* border-radius: 10px; */
-  /* margin: 0 auto; */
   min-height: 127px;
-  /* padding-left: 65px; */
   position: relative;
   border-bottom: 1px solid var(--main-yellow);
 }
@@ -326,33 +322,26 @@
 
 .tech_cells_collection{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  /* padding:5px; */
+  margin-left: 10px;
 }
 .skill_section__cell {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  /* background-color: var(--blue-gray); */
-  /* margin: 5px 0px; */
   padding: 5px 0;
   padding-left: 5px;
-  /* border-radius: 10px; */
-  /* min-height: 80px; */
-  min-width: 150px;
+  min-width: 100px;
   width: 20%;
-  /* border: 1px solid yellow; */
 }
 .skill_section__cell__img {
-  width: 30px;
+  width: 20px;
   margin: auto 5px;
 }
 .skill_section__cell__name {
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: var(--main-font);
   margin: 2px;
 }
@@ -363,7 +352,6 @@
   display: flex;
   width: 100%;
   margin: auto;
-  /* margin-bottom: 10px; */
   min-height: 127px;
   position: relative;
 }
@@ -387,8 +375,10 @@
 }
 .language_cell{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: var(--blue-gray-darker);
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .language_cell > div{
   display: flex;
@@ -396,14 +386,12 @@
 }
 .language_cell__img{
   width: 20px;
-  margin: 10px;
-  margin-left: 20px;
 }
 .language_cell__name{
   color: white;
   font-family: var(--main-font);
   font-size: 1.2rem;
-  margin-right: 15px;
+  margin-left: 15px;
   min-width: 80px;
 }
 .proficiency_level__tag{
@@ -416,6 +404,8 @@
   font-family: var(--title-font);
   font-size: 1.2rem;
   min-width: 160px;
+  margin-left: 35px;
+  margin-top: 5px;
 }
 
 .proficiency_level__certificate{
@@ -436,26 +426,26 @@
 .job_item{
   display: flex;
   flex-direction: column;
-  border-bottom: solid var(--main-yellow) 3px;
+  /* border-bottom: solid var(--main-yellow) 3px; */
   width: 90%;
   margin: auto;
   padding: 0 10px;
 }
 .job_title{
-  color: var(--main-yellow);
+  color: var(--blue-gray-darker);
   font-family: var(--main-font);
   font-size: 16px;
   font-weight: 600;
   margin-top: 7px;
 }
 .job_company{
-  color: white;
+  color: black;
   font-family: var(--main-font);
   font-size: 12px;
   font-weight: 600;
 }
 .job_description{
-  color: white;
+  color: black;
   font-size: 12px;
   font-family: var(--content-font);
   margin: 5px 0px 7px 0;
@@ -463,8 +453,10 @@
 }
 .job_duration{
   font-family: var(--content-font);
-  color: var(--main-yellow);
+  color: var(--blue-gray-darker);
   font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
   font-size: 12px;
 }
 

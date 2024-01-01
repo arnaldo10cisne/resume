@@ -487,14 +487,16 @@
   font-size: 12px;
 }
 .project_tech {
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
+  margin-left: 20px;
+  /* margin-bottom: -50px; */
 }
 .project_tech__item {
   color: white;
   font-size: 12px;
   font-family: var(--content-font);
   background-color: var(--blue-gray-darker);
-  padding: 5px 10px;
+  padding: 2px 10px;
   border-radius: 10px;
   margin-right: 5px;
 }

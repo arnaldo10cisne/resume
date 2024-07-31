@@ -201,11 +201,13 @@
   margin: auto;
   padding: 5px;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 .college_logo{
-  width: 150px;
+  height: 48px;
+  /* width: 150px; */
   background-color: transparent;
   padding: 5px;
   margin: 10px 10px;
